@@ -26,50 +26,34 @@ The system includes:
 
 ---
 
-## 🗂 Project Structure
 
-
-medical-insurance-prediction/
-│
-├── data/
-│ ├── dataset_generation.py
-│ └── medical_insurance_data.csv
-│
-├── model/
-│ ├── train.py
-│ ├── predict.py
-│ ├── preprocessing.py
-│ ├── insurance_model.pkl
-│ └── feature_columns.pkl
-│
-├── plots/
-│ ├── compare.py
-│ ├── visualization.py
-│
-├── app.py
-└── README.md
-
-
----
 
 ## ⚙️ Installation
 
 ### 1️⃣ Clone Repository
 
-```bash
+bash
 git clone <your-repository-url>
 cd medical-insurance-prediction
+
 2️⃣ Create Virtual Environment (Recommended)
+
 python -m venv venv
+
 source venv/bin/activate        # Mac/Linux
+
 venv\Scripts\activate           # Windows
+
 3️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 Or manually:
 
 pip install pandas numpy scikit-learn matplotlib streamlit joblib
+
 🚀 How to Train the Model
+
 python model/train.py
 
 This will:
@@ -87,6 +71,7 @@ insurance_model.pkl
 feature_columns.pkl
 
 🔍 How to Evaluate the Model
+
 python plots/compare.py
 
 This will:
@@ -108,6 +93,7 @@ Actual vs Predicted plot
 Residual plot
 
 🌐 Run Web Application
+
 streamlit run app.py
 
 The application allows users to:
@@ -159,12 +145,3 @@ Hyperparameter tuning
 Feature importance visualization
 
 Deploy to Streamlit Cloud
-
-👨‍💻 Author
-
-Trần Hoàng Nam
-Machine Learning & AI Student
-
-📜 License
-
-This project is developed for educational and academic purposes.
